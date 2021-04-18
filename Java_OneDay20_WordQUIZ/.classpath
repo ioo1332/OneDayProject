@@ -6,7 +6,7 @@
 			<attribute name="module" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="C:/bizworks/javaworks/myJDK/InputService.jar"/>
-	<classpathentry kind="lib" path="C:/bizworks/javaworks/myJDK/iooJDK.jar"/>
+	<classpathentry kind="lib" path="C:/bizworks/javaworks/MyJDK/InputService.jar"/>
+	<classpathentry kind="lib" path="C:/bizworks/javaworks/MyJDK/iooJDK.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

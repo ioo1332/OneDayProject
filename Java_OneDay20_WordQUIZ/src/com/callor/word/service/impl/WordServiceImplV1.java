@@ -22,7 +22,7 @@ public class WordServiceImplV1 implements WordService {
 	protected List<WordVO> wordList;
 	protected final int 영어 = 0;
 	protected final int 한글 = 1;
-	protected MenuService menuService;
+	protected MenuService MenuService;
 	protected Random rnd;
 	protected WordVO wdVO = new WordVO();
 	protected Integer uScore = 0;
@@ -78,9 +78,9 @@ public class WordServiceImplV1 implements WordService {
 		menuList.add("이 어 하 기");
 		menuList.add("저 장 하 기");
 
-		menuService = new MenuServiceImplV1("뤼팡의 영 단어 퀴즈", menuList);
+		MenuService = new MenuServiceImplV1("뤼팡의 영 단어 퀴즈", menuList);
 		while (true) {
-			Integer menu = menuService.selectMenu();
+			Integer menu = MenuService.selectMenu();
 			if (menu == null) {
 				System.out.println("게 임 종 료");
 				break;
@@ -121,7 +121,6 @@ public class WordServiceImplV1 implements WordService {
 		while (true) {
 			String strInput = null;
 			System.out.println("=".repeat(50));
-			System.out.println(word.toString());// 정답
 			System.out.println("제시된 영 단어를 바르게 배열하세요(QUIT:게임종료)");
 			System.out.println(Arrays.toString(strWord));
 			System.out.println("=".repeat(50));
@@ -160,7 +159,7 @@ public class WordServiceImplV1 implements WordService {
 			wdVO.getCount();
 			wdVO.getnWinCount();
 			wdVO.getnLossCount();
-			
+
 		}
 		System.out.println("게임종료");
 	}
@@ -203,16 +202,14 @@ public class WordServiceImplV1 implements WordService {
 				System.out.println("파일생성불가");
 				continue;
 			}
-
 		}
-
 	}
 
 	@Override
 	public void loadGame() {
 		// TODO Auto-generated method stub
-		
-		
+		System.out.println("게임 불러오기");
+
 	}
 
 }
