@@ -31,7 +31,7 @@ public class WordServiceImplV1 implements WordService {
 		// TODO Auto-generated constructor stub
 		scan = new Scanner(System.in);
 		wordList = new ArrayList<WordVO>();
-		Random rnd = new Random();
+		rnd = new Random();
 		this.loadWord();
 
 	}
